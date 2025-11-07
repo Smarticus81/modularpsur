@@ -44,8 +44,8 @@ class PSURConfig:
     def __init__(self):
         # File Paths - point to inputs folder in root directory
         inputs_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'inputs')
-        self.complaints_file = os.path.join(inputs_dir, "inca_complaints.xlsx")
-        self.sales_file = os.path.join(inputs_dir, "inca_Sales.xlsx")
+        self.complaints_file = os.path.join(inputs_dir, "33_complaints.xlsx")
+        self.sales_file = os.path.join(inputs_dir, "33_sales.xlsx")
         self.output_dir = "output"
         self.config_file = "config.json"
         
@@ -320,11 +320,19 @@ Return ONLY the exact column name that contains quantities/units sold. No explan
         
         # Handle month-only dates by adding year if available
         if 'sales_year' in self.sales_df.columns:
-            # Combine month and year
-            self.sales_df['sales_date'] = self.sales_df.apply(
-                lambda row: f"{row['sales_date']} {int(row['sales_year'])}" if pd.notna(row.get('sales_year')) else row['sales_date'],
-                axis=1
-            )
+            # Combine month name and year to create proper dates
+            def combine_month_year(row):
+                try:
+                    if pd.notna(row.get('sales_year')) and pd.notna(row.get('sales_date')):
+                        year = int(row['sales_year'])
+                        month_str = str(row['sales_date']).strip()
+                        # Create date string: "Month Year" -> pandas can parse this
+                        return f"{month_str} {year}"
+                    return row['sales_date']
+                except:
+                    return row['sales_date']
+            
+            self.sales_df['sales_date'] = self.sales_df.apply(combine_month_year, axis=1)
         else:
             print(f"  WARNING: No year column found in sales data. Sales dates may be incomplete.")
             print(f"  Available columns: {list(self.sales_df.columns)}")

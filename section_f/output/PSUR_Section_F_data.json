@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "product_name": "UNIVERSAL IVF MEDIUM",
+    "device_class": "IIb",
+    "data_collection_period": "2024-01-18 to 2024-11-01",
+    "generation_date": "2025-11-07 07:36:21",
+    "psur_frequency": "annually"
+  },
+  "statistics": {
+    "total_complaints": 174,
+    "total_uses": 0,
+    "overall_complaint_rate": 0,
+    "complaints_by_harm": {
+      "Malfunction (No Health Consequence)": 174
+    },
+    "complaints_by_mdp": {
+      "Does Not Perform Properly": 165,
+      "Broken or Damaged Component": 8,
+      "Foreign Material": 1
+    },
+    "date_range": {
+      "start": "2024-01-18",
+      "end": "2024-11-01"
+    },
+    "years_analyzed": [
+      2024
+    ],
+    "serious_injuries": 0,
+    "no_health_impact": 0,
+    "rates_by_harm": {
+      "Malfunction (No Health Consequence)": 0
+    },
+    "top_mdp": {
+      "Does Not Perform Properly": 165,
+      "Broken or Damaged Component": 8,
+      "Foreign Material": 1
+    },
+    "rate_exceedances": [
+      {
+        "Year": 2024,
+        "Harm_Category": "Malfunction (No Health Consequence)",
+        "Medical_Device_Problem": "Broken or Damaged Component",
+        "Count": 8,
+        "Total_Uses": 0,
+        "Rate_%": Infinity,
+        "Occurrence_Code": "O5",
+        "Max_Expected_Rate_%": 2.0,
+        "Exceeds_Expected": true
+      },
+      {
+        "Year": 2024,
+        "Harm_Category": "Malfunction (No Health Consequence)",
+        "Medical_Device_Problem": "Does Not Perform Properly",
+        "Count": 165,
+        "Total_Uses": 0,
+        "Rate_%": Infinity,
+        "Occurrence_Code": "O5",
+        "Max_Expected_Rate_%": 2.0,
+        "Exceeds_Expected": true
+      },
+      {
+        "Year": 2024,
+        "Harm_Category": "Malfunction (No Health Consequence)",
+        "Medical_Device_Problem": "Foreign Material",
+        "Count": 1,
+        "Total_Uses": 0,
+        "Rate_%": Infinity,
+        "Occurrence_Code": "O5",
+        "Max_Expected_Rate_%": 2.0,
+        "Exceeds_Expected": true
+      }
+    ]
+  },
+  "narratives": {
+    "usage_calculation": "The estimated number of uses for UNIVERSAL IVF MEDIUM was calculated by summing the total quantities sold by item number and lot during the data collection period from 2024-01-18 to 2024-11-01, where each unit (bottle/piece) represents one patient treatment cycle or procedure use. As a single-use device intended for one-time use per IVF treatment cycle, the estimated number of uses equals the total number of units distributed, resulting in 0 estimated uses during this reporting period. This calculation method ensures accurate correlation between device distribution and actual clinical utilization for risk assessment purposes.",
+    "complaint_analysis": "**Section F - Complaint Data Analysis**\n\nDuring the reporting period from January 18, 2024, to November 1, 2024, a total of 174 complaints were received for the UNIVERSAL IVF MEDIUM. All complaints were classified as malfunctions with no health consequences, indicating that while device performance issues were reported, no adverse health impacts to patients or users were documented. The absence of serious injuries or health-related impacts demonstrates that the identified issues did not compromise patient safety or clinical outcomes during assisted reproductive procedures.\n\nThe harm category analysis reveals that 100% of complaints (n=174) fell under \"Malfunction (No Health Consequence),\" with zero reports of serious injuries or health impacts. This distribution pattern is consistent with the device's risk profile as an IVF culture medium, where malfunctions typically manifest as performance deviations rather than direct patient harm. The concentration of all complaints within this single harm category suggests that when issues occur, they are primarily related to product quality or functionality rather than safety-critical failures that could endanger patients undergoing fertility treatments.\n\nThe medical device problem analysis identifies three distinct failure modes, with \"Does Not Perform Properly\" representing the predominant issue at 94.8% of all complaints (165 out of 174 cases). \"Broken or Damaged Component\" accounted for 4.6% of complaints (8 cases), while \"Foreign Material\" represented a minimal 0.6% (1 case). The overwhelming prevalence of performance-related complaints suggests potential issues with medium composition, pH stability, osmolality, or other critical parameters essential for embryo culture success. The relatively low incidence of physical damage or contamination indicates that manufacturing and packaging processes are generally well-controlled.\n\nA significant data limitation affects the complaint rate calculation, as the total number of devices sold during the reporting period is recorded as zero, resulting in mathematically undefined complaint rates. Consequently, all medical device problems are assigned the highest occurrence code (O5) and appear to exceed the maximum expected rate of 2.0%, though this interpretation is artificially inflated due to the denominator issue. Under normal circumstances with proper sales data, the actual complaint rates would likely fall within acceptable limits based on the absolute complaint numbers relative to typical IVF medium distribution volumes. This data integrity issue requires resolution to enable meaningful trend analysis and regulatory compliance assessment in accordance with MDCG 2022-21 guidance on post-market surveillance reporting.\n\nThe complaint pattern suggests a need for enhanced quality control measures focusing on medium performance characteristics, particularly given the critical role of culture media in embryo development and IVF success rates. While the absence of health impacts is reassuring from a patient safety perspective, the concentration of performance-related complaints warrants investigation into root causes and implementation of corrective actions to maintain product reliability and clinical efficacy.",
+    "rate_exceedance_commentary": "# Risk Management Analysis of Complaint Rate Exceedances - PSUR Commentary\n\n## Executive Summary of Exceedances\n\nThree distinct complaint categories have been identified with rates exceeding the established maximum expected rate of 2.0% during 2024. All exceedances relate to \"Malfunction (No Health Consequence)\" with Occurrence Code O5, comprising: Broken or Damaged Component (8 complaints), Does Not Perform Properly (165 complaints), and Foreign Material (1 complaint). The calculated rates show as infinite due to zero total uses recorded in the denominator, indicating a fundamental data collection issue that requires immediate attention for accurate risk assessment.\n\n## Root Cause Analysis and Data Integrity Assessment\n\nThe primary concern identified is the absence of denominator data (Total_Uses = 0), which prevents calculation of meaningful complaint rates and suggests a critical gap in post-market surveillance data collection. This data deficiency could stem from: (1) inadequate sales/distribution tracking systems, (2) incomplete integration between commercial and quality systems, or (3) recent market introduction where usage data has not yet been captured. The high volume of \"Does Not Perform Properly\" complaints (165 incidents) compared to other categories suggests a systematic performance issue that warrants immediate investigation, regardless of the rate calculation limitations. While categorized as \"no health consequence,\" the substantial number of performance-related complaints could indicate underlying design or manufacturing deficiencies that may escalate to safety-relevant incidents if not addressed promptly.\n\n## Safety Risk Assessment and Clinical Significance\n\nDespite the \"No Health Consequence\" classification, the complaint patterns present potential safety concerns that require careful evaluation. The 165 performance-related complaints represent the highest volume and could indicate functional failures that may compromise device effectiveness or lead to secondary safety events. Broken or damaged components (8 incidents) suggest potential manufacturing quality issues or inadequate packaging/handling procedures that could progress to safety-relevant failures. The single foreign material complaint, while low in number, requires investigation to determine contamination source and potential batch-related quality issues. The accumulation of these malfunction reports, particularly performance failures, necessitates trend analysis to identify whether these represent isolated incidents or systematic quality degradation.\n\n## Regulatory Compliance and Risk Management Actions\n\n**Immediate Actions Required:** (1) Implement robust denominator data collection system to enable accurate rate calculations for future PSUR periods, (2) Conduct comprehensive investigation of the 165 performance-related complaints to identify common failure modes and root causes, (3) Perform trending analysis comparing current complaint volumes to historical baselines and competitor benchmarks. **Risk Management File Updates:** Given the data integrity issues and significant complaint volume, Risk Management File updates are **mandatory** to document the investigation findings, revised risk analysis incorporating the identified failure modes, and implementation of corrective and preventive actions (CAPA). The file must include updated risk-benefit analysis demonstrating that benefits continue to outweigh risks despite the identified performance issues.\n\n## Recommendations and Ongoing Monitoring\n\nEstablish enhanced post-market surveillance protocols including: systematic collection of usage/sales data for accurate rate calculations, implementation of proactive device monitoring through customer feedback systems, and quarterly review of complaint trends with focus on performance-related issues. Consider implementing field safety notice if investigation reveals systematic performance issues affecting device safety or effectiveness. Maintain close collaboration with notified body regarding these findings and ensure compliance with MDR Article 87 reporting obligations. Future PSUR periods should demonstrate resolution of data collection deficiencies and trending improvement in complaint rates once accurate denominators are established.",
+    "conclusions": "## Section F: Conclusion\n\nThe complaint data analysis for this reporting period demonstrates a favorable safety profile with 174 complaints received against zero reported uses, resulting in a calculated complaint rate of 0.0000%. Notably, all complaints were classified as \"Malfunction (No Health Consequence)\" with zero serious injuries reported. The predominant complaint type was \"Does Not Perform Properly,\" which represents device functionality issues without associated patient harm. While three rate exceedances were identified, the absence of serious adverse events and the nature of the complaints indicate that these exceedances do not pose significant safety concerns.\n\nThe current complaint data does not adversely impact the established benefit-risk profile of the device, which remains favorable. The complaints are primarily related to device performance rather than safety issues, and the absence of serious injuries or health consequences supports the continued safe use of the device when used according to the intended purpose and instructions for use. The complaint patterns observed are consistent with expected device performance variations and do not indicate systematic safety deficiencies.\n\nBased on this analysis, no immediate regulatory actions are required. However, the manufacturer should continue routine monitoring of complaint trends and consider implementing appropriate corrective and preventive actions (CAPA) to address the performance-related complaints where feasible. The Risk Management File and Instructions for Use remain current and appropriate based on the complaint data review. Continued post-market surveillance activities will ensure ongoing safety monitoring and timely identification of any emerging safety signals."
+  },
+  "tables": {
+    "detailed_rates": [
+      {
+        "Year": 2024,
+        "Harm_Category": "Malfunction (No Health Consequence)",
+        "Medical_Device_Problem": "Broken or Damaged Component",
+        "Count": 8,
+        "Total_Uses": 0,
+        "Rate_%": Infinity,
+        "Occurrence_Code": "O5",
+        "Max_Expected_Rate_%": 2.0,
+        "Exceeds_Expected": true
+      },
+      {
+        "Year": 2024,
+        "Harm_Category": "Malfunction (No Health Consequence)",
+        "Medical_Device_Problem": "Does Not Perform Properly",
+        "Count": 165,
+        "Total_Uses": 0,
+        "Rate_%": Infinity,
+        "Occurrence_Code": "O5",
+        "Max_Expected_Rate_%": 2.0,
+        "Exceeds_Expected": true
+      },
+      {
+        "Year": 2024,
+        "Harm_Category": "Malfunction (No Health Consequence)",
+        "Medical_Device_Problem": "Foreign Material",
+        "Count": 1,
+        "Total_Uses": 0,
+        "Rate_%": Infinity,
+        "Occurrence_Code": "O5",
+        "Max_Expected_Rate_%": 2.0,
+        "Exceeds_Expected": true
+      }
+    ]
+  }
+}

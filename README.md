@@ -39,8 +39,8 @@ modularpsur/
 
 ```bash
 cd section_c & python c.py
-cd section_d & python psur_section_d_generator.py
-cd section_f & python psur_section_f_generator.py
+cd section_d & python d.py
+cd section_f & python f.py
 cd section_g & python g.py
 cd section_j & python j.py
 cd section_k & python k.py

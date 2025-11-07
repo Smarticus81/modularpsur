@@ -928,20 +928,30 @@ def main():
     print("="*80)
     print()
     
-    # Check arguments
-    if len(sys.argv) < 3:
-        print("Usage: python psur_section_d_generator.py <input_file.xlsx> <output_directory>")
+    # Check if arguments provided, otherwise use defaults
+    if len(sys.argv) >= 3:
+        input_file = sys.argv[1]
+        output_dir = sys.argv[2]
+    else:
+        # Use default paths relative to script location
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        inputs_dir = os.path.join(os.path.dirname(script_dir), 'inputs')
+        input_file = os.path.join(inputs_dir, '33_complaints.xlsx')
+        output_dir = os.path.join(script_dir, 'output')
+        
+        print("Using default files:")
+        print(f"  Input: {input_file}")
+        print(f"  Output: {output_dir}")
         print()
-        print("Example:")
-        print("  python psur_section_d_generator.py complaints_data.xlsx ./output")
-        sys.exit(1)
-    
-    input_file = sys.argv[1]
-    output_dir = sys.argv[2]
     
     # Validate input file
     if not os.path.exists(input_file):
         print(f"ERROR: Input file not found: {input_file}")
+        print()
+        print("Usage: python psur_section_d_generator.py <input_file.xlsx> <output_directory>")
+        print()
+        print("Example:")
+        print("  python psur_section_d_generator.py complaints_data.xlsx ./output")
         sys.exit(1)
     
     # Create output directory
