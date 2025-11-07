@@ -4,6 +4,13 @@ Modular PSUR (Periodic Safety Update Report) generation system with semantic CER
 
 ## Quick Start
 
+### Web Interface (New!)
+```bash
+python3 app.py
+# Visit http://localhost:5000
+```
+
+### Command Line
 Double-click `start.bat` to launch the system environment.
 
 ## Structure
