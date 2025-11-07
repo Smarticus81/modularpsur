@@ -1,48 +1,32 @@
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-*.egg-info/
-dist/
 build/
-
-# Virtual Environment
-venv/
-env/
-ENV/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Semantic Cache
-.semantic_cache/
-
-# Output files
-section_*/output/*.docx
-section_*/output/*.xlsx
-section_*/output/*.csv
-section_*/output/*.png
-output/*.docx
-output/*.xlsx
-output/*.csv
-output/*.png
-
-# Temporary files
-*.tmp
-*.log
-
-# Environment variables
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 .env
-
-# Large data files (keep structure, ignore content)
-# inputs/*.xlsx
-# inputs/*.pdf
+.venv
+env/
+venv/
+ENV/
+instance/
+.webassets-cache
+.pytest_cache/
+.coverage
+htmlcov/
+uploads/
+*.log

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSUR Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PSUR Generator</h1>
+            <p class="subtitle">EU MDR 2017/745 Compliant</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>Input Files</h2>
+                <div class="upload-grid">
+                    <div class="upload-item">
+                        <label for="sales">Sales Data</label>
+                        <input type="file" id="sales" accept=".xlsx" />
+                        <span class="status" id="sales-status"></span>
+                    </div>
+                    <div class="upload-item">
+                        <label for="complaints">Complaints Data</label>
+                        <input type="file" id="complaints" accept=".xlsx" />
+                        <span class="status" id="complaints-status"></span>
+                    </div>
+                    <div class="upload-item">
+                        <label for="cer">CER Document</label>
+                        <input type="file" id="cer" accept=".pdf,.docx" />
+                        <span class="status" id="cer-status"></span>
+                    </div>
+                    <div class="upload-item">
+                        <label for="external_db">External Database</label>
+                        <input type="file" id="external_db" accept=".xlsx" />
+                        <span class="status" id="external-status"></span>
+                    </div>
+                    <div class="upload-item">
+                        <label for="previous_psur">Previous PSUR</label>
+                        <input type="file" id="previous_psur" accept=".docx" />
+                        <span class="status" id="previous-status"></span>
+                    </div>
+                    <div class="upload-item">
+                        <label for="template">PSUR Template</label>
+                        <input type="file" id="template" accept=".docx" />
+                        <span class="status" id="template-status"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sections-section">
+                <h2>Generate Sections</h2>
+                <div class="sections-grid">
+                    <div class="section-card" data-section="c">
+                        <div class="section-header">
+                            <h3>Section C</h3>
+                            <input type="checkbox" id="section-c" />
+                        </div>
+                        <p>Sales & Population</p>
+                    </div>
+                    <div class="section-card" data-section="d">
+                        <div class="section-header">
+                            <h3>Section D</h3>
+                            <input type="checkbox" id="section-d" />
+                        </div>
+                        <p>Serious Incidents</p>
+                    </div>
+                    <div class="section-card" data-section="f">
+                        <div class="section-header">
+                            <h3>Section F</h3>
+                            <input type="checkbox" id="section-f" />
+                        </div>
+                        <p>Complaint Types & Rates</p>
+                    </div>
+                    <div class="section-card" data-section="g">
+                        <div class="section-header">
+                            <h3>Section G</h3>
+                            <input type="checkbox" id="section-g" />
+                        </div>
+                        <p>Complaints & Trends</p>
+                    </div>
+                    <div class="section-card" data-section="j">
+                        <div class="section-header">
+                            <h3>Section J</h3>
+                            <input type="checkbox" id="section-j" />
+                        </div>
+                        <p>Literature Review</p>
+                    </div>
+                    <div class="section-card" data-section="k">
+                        <div class="section-header">
+                            <h3>Section K</h3>
+                            <input type="checkbox" id="section-k" />
+                        </div>
+                        <p>Marketed vs Evaluated</p>
+                    </div>
+                    <div class="section-card" data-section="l">
+                        <div class="section-header">
+                            <h3>Section L</h3>
+                            <input type="checkbox" id="section-l" />
+                        </div>
+                        <p>Clinical Data</p>
+                    </div>
+                    <div class="section-card" data-section="m">
+                        <div class="section-header">
+                            <h3>Section M</h3>
+                            <input type="checkbox" id="section-m" />
+                        </div>
+                        <p>Risk-Benefit Assessment</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="action-section">
+                <button id="generate-btn" class="primary-btn">Generate Reports</button>
+            </div>
+
+            <section class="status-section" id="status-section" style="display: none;">
+                <h2>Generation Status</h2>
+                <div id="status-content"></div>
+                <div id="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </section>
+
+            <section class="outputs-section" id="outputs-section" style="display: none;">
+                <h2>Generated Reports</h2>
+                <div id="outputs-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>PSUR Generator v1.0 | Powered by Claude AI</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
