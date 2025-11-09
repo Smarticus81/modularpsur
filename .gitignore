@@ -30,3 +30,7 @@ instance/
 htmlcov/
 uploads/
 *.log
+
+# Keep inputs folder but ignore its contents
+inputs/*
+!inputs/.gitkeep

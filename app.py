@@ -8,7 +8,12 @@ from werkzeug.utils import secure_filename
 import threading
 from datetime import datetime
 
-app = Flask(__name__)
+# Get the base directory (works both locally and on Vercel)
+BASE_DIR = Path(__file__).parent.absolute()
+
+app = Flask(__name__,
+            static_folder=str(BASE_DIR / 'static'),
+            template_folder=str(BASE_DIR / 'templates'))
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 app.config['UPLOAD_FOLDER'] = tempfile.mkdtemp()
 
